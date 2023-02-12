@@ -222,6 +222,7 @@ li {
     height: 20px;
     border: solid 1px black;
     background-color: rgb(215, 215, 215);
+    border-radius: 3px;
     margin: 5px;
     padding: 3px;
     display: flex;
@@ -235,7 +236,7 @@ li:hover {
     width: 55px;
     height: 20px;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 5px;
     padding: 3px;
 }
@@ -244,7 +245,7 @@ li:active {
     width: 55px;
     height: 20px;
     background-color: #f10086;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 5px;
     padding: 3px;}
 
