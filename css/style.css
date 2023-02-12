@@ -207,12 +207,6 @@ margin-top: 10px;}
 
 
 
-
-
-
-
-
-
 /* responsive mobile con mediaqueries */
 @media screen and (max-width: 576px) {
 
@@ -233,6 +227,27 @@ li {
     display: flex;
     flex-direction: column;
 }
+
+
+a:hover {color: white;}
+
+li:hover {
+    width: 55px;
+    height: 20px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
+
+li:active {
+    width: 55px;
+    height: 20px;
+    background-color: #f10086;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;}
+
 
 .busqueda {
     width: 70px;
@@ -262,7 +277,6 @@ li {
 
 
 .tittle-grid {
-    color: red;
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
     text-align: center;
