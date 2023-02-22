@@ -1,0 +1,22 @@
+
+/* atributos pseudoclases extend */
+%animacion-nav {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+a:hover {color: white;}
+
+li:hover {
+    @extend %animacion-nav;
+    background-color: black;
+    
+}
+
+li:active {
+    @extend %animacion-nav;
+    background-color: #f10086;
+}

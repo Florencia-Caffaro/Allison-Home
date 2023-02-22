@@ -1,0 +1,21 @@
+
+/* flex header pagina home */
+.inline {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+/* grid pagina home */
+.tittle-grid {
+    color: #f10086;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
