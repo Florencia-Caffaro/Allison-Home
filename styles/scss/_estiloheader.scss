@@ -1,0 +1,112 @@
+/* $estilosgenerales */
+
+/* mapa nav */
+$navbar: (
+    border: 1px solid black,
+    color: white,
+    radio: 5px,
+    cursor: pointer,
+    decoration: none,
+);
+
+/* barra nav atributos tipografia */
+ul li a {
+    font-family: 100% $font-stack;
+    color: $primary-color;
+    text-decoration: map-get($map: $navbar, $key: decoration);
+    cursor: map-get($map: $navbar, $key: cursor);
+    text-align: center;
+}
+
+/* barra nav box-modeling */
+li {
+    width: 120px;
+    height: 120px;
+    border: map-get($map: $navbar, $key: border);
+    background-color: rgb(215, 215, 215);
+    border-radius: map-get($map: $navbar, $key: radio);
+    margin: 15px;
+    padding: 5px;
+    display: inline;
+}
+
+/* barra busqueda estilo */
+.busqueda {
+    width: 150px;
+    height: 20px;
+    margin: 30px;
+    padding: 5px;
+    display: inline;
+}
+
+/* iconos profile y compras estilo */
+
+.iconos {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    padding: 5px;
+    display: inline;
+}
+
+/* barra nav responsive mobile con mediaqueries */
+@media screen and (max-width: 576px) {
+    li {
+        color: black;
+        font-family: $font-stack;
+        font-size: 12px;
+        text-decoration: map-get($map: $navbar, $key: decoration);
+        text-align: center;
+        
+        width: 55px;
+        height: 20px;
+        border: solid 1px black;
+        background-color: rgb(215, 215, 215);
+        border-radius: 3px;
+        margin: 5px;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a:hover {color: white;}
+
+    li:hover {
+        width: 55px;
+        height: 20px;
+        background-color: black;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    li:active {
+        width: 55px;
+        height: 20px;
+        background-color: $secondary-color;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 3px;}
+    
+    
+    .busqueda {
+        width: 70px;
+        height: 10px;
+        margin: 15px;
+        padding: 3px;
+        display: inline;
+    }
+    
+    .iconos {
+        width: 20px;
+        height: 20px;
+        margin: 7px;
+        padding: 3px;
+        display: inline;
+    }
+     
+    #cerca { width: 50%;
+        height: 20px;}
+       
+     }
+        

@@ -1,0 +1,54 @@
+
+/* flex header pagina home */
+.inline {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+/* grid pagina home */
+.tittle-grid {
+    color: $secondary-color;
+    font-family: $font-stack2;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+/* responsive mobile con mediaqueries Pag Home*/
+@media screen and (max-width: 576px) {
+ .card-img {
+        width: 40%;
+    }
+    
+ .card-img2 {
+        width: 20%;
+    }
+    
+
+.tittle-grid {
+    font-family: $font-stack2;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
+
+.grid-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.grid-container>div {
+    padding: 10px;
+}
+}

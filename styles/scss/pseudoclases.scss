@@ -18,5 +18,5 @@ li:hover {
 
 li:active {
     @extend %animacion-nav;
-    background-color: #f10086;
+    background-color: $secondary-color;
 }

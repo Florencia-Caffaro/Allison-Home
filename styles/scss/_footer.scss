@@ -1,0 +1,47 @@
+
+/* footer estilo todas las paginas */
+.pie {
+    color: $primary-color;
+    font-family: 100% $font-stack;
+    text-align: center;
+}
+
+.logoig {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+/* footer todas las paginas */
+.footer {
+    margin: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+/* responsive mobile con mediaqueries Footer todas las pag*/
+@media screen and (max-width: 576px) {
+    .footer {
+        margin: 25px;
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
+    .pie {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .logoig {
+        padding: 3px;
+        width: 15px;
+        height: 15px;
+    }
+}
+    
