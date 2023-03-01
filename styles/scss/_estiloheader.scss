@@ -7,35 +7,37 @@ $navbar: (
     radio: 5px,
     cursor: pointer,
     decoration: none,
+    padding: 5px
 );
 
-/* barra nav atributos tipografia */
+/* Nesting barra nav atributos tipografia y box modeling */
 ul li a {
     font-family: 100% $font-stack;
     color: $primary-color;
     text-decoration: map-get($map: $navbar, $key: decoration);
     cursor: map-get($map: $navbar, $key: cursor);
     text-align: center;
+
+
+    li {
+        width: 120px;
+        height: 120px;
+        border: map-get($map: $navbar, $key: border);
+        background-color: rgb(215, 215, 215);
+        border-radius: map-get($map: $navbar, $key: radio);
+        margin: 15px;
+        padding: map-get($map: $navbar, $key: padding);
+        display: inline;
+    }
 }
 
-/* barra nav box-modeling */
-li {
-    width: 120px;
-    height: 120px;
-    border: map-get($map: $navbar, $key: border);
-    background-color: rgb(215, 215, 215);
-    border-radius: map-get($map: $navbar, $key: radio);
-    margin: 15px;
-    padding: 5px;
-    display: inline;
-}
 
 /* barra busqueda estilo */
 .busqueda {
     width: 150px;
     height: 20px;
-    margin: 30px;
-    padding: 5px;
+    margin: 10px;
+    padding: map-get($map: $navbar, $key: padding);
     display: inline;
 }
 
@@ -45,8 +47,19 @@ li {
     width: 30px;
     height: 30px;
     margin: 15px;
-    padding: 5px;
+    padding: map-get($map: $navbar, $key: padding);
     display: inline;
+}
+
+/* flexbox nav */
+
+.inline {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 /* barra nav responsive mobile con mediaqueries */
@@ -57,7 +70,7 @@ li {
         font-size: 12px;
         text-decoration: map-get($map: $navbar, $key: decoration);
         text-align: center;
-        
+
         width: 55px;
         height: 20px;
         border: solid 1px black;
@@ -68,27 +81,30 @@ li {
         display: flex;
         flex-direction: column;
     }
-    
-    a:hover {color: white;}
+
+    a:hover {
+        color: white;
+    }
 
     li:hover {
-        width: 55px;
-        height: 20px;
-        background-color: black;
-        border-radius: 3px;
-        margin: 5px;
-        padding: 3px;
-    }
-    
-    li:active {
         width: 55px;
         height: 20px;
         background-color: $secondary-color;
         border-radius: 3px;
         margin: 5px;
-        padding: 3px;}
-    
-    
+        padding: 3px;
+    }
+
+    li:active {
+        width: 55px;
+        height: 20px;
+        background-color: bl;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 3px;
+    }
+
+
     .busqueda {
         width: 70px;
         height: 10px;
@@ -96,7 +112,7 @@ li {
         padding: 3px;
         display: inline;
     }
-    
+
     .iconos {
         width: 20px;
         height: 20px;
@@ -104,9 +120,10 @@ li {
         padding: 3px;
         display: inline;
     }
-     
-    #cerca { width: 50%;
-        height: 20px;}
-       
-     }
-        
+
+    #cerca {
+        width: 50%;
+        height: 20px;
+    }
+
+}

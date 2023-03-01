@@ -29,15 +29,16 @@ a:hover {color: white;}
 li:hover {
     width: 120px;
     height: 120px;
-    background-color: black;
+    background-color:#f10086;
     border-radius: 5px;
     padding: 5px;
 }
 
+
 li:active {
     width: 120px;
     height: 120px;
-    background-color: #f10086;
+    background-color: black;
     border-radius: 5px;
     padding: 5px;
 
@@ -47,7 +48,7 @@ li:active {
 .busqueda {
     width: 150px;
     height: 20px;
-    margin: 30px;
+    margin: 10px;
     padding: 5px;
     display: inline;
 }
@@ -100,10 +101,12 @@ header {
    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
 }
+
+
 
 /* footer todas las paginas */
 
@@ -121,7 +124,7 @@ main {
     color: rgb(66, 64, 64);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin: 50px;
+    ;
 }
 
 .img-prodotto {
@@ -150,7 +153,7 @@ main {
     margin: 20px;
 }
 
-#grid-container-contatto {
+.grid-container-contatto {
     width: 90%;
     max-width: 100%;
     margin: 15px auto;
@@ -183,7 +186,7 @@ main {
 }
 
 .card-img {
-    width: 40%;
+    width: 100%;
 }
 
 /* carrousel pagina noi */
@@ -235,7 +238,7 @@ a:hover {color: white;}
 li:hover {
     width: 55px;
     height: 20px;
-    background-color: black;
+    background-color: #f10086;
     border-radius: 3px;
     margin: 5px;
     padding: 3px;
@@ -244,7 +247,7 @@ li:hover {
 li:active {
     width: 55px;
     height: 20px;
-    background-color: #f10086;
+    background-color: black;
     border-radius: 3px;
     margin: 5px;
     padding: 3px;}
@@ -268,7 +271,7 @@ li:active {
 }
 
 .card-img {
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -361,7 +364,33 @@ height: 20px;}
     font-size: 14px;
     text-align: center;
     }
+/* responsive mobile pagina Contatto */
+/* grid areas pagina contatto */
+.tittle-grid-contatto {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 3px;
+}
 
+.grid-container-contatto {
+   display: flex;
+    justify-content: center;
+}
+.estilo {
+    width: 30%;
+    max-width: 30%;
+    margin: 5px;
+    padding: 5px;
+}
 
+.estilo-2 {
+    margin: 5px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
 
 }

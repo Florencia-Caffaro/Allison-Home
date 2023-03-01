@@ -1,13 +1,4 @@
 
-/* flex header pagina home */
-.inline {
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
 
 /* grid pagina home */
 .tittle-grid {
@@ -19,14 +10,15 @@
     margin: 20px;
 }
 
+.card-img {
+    width: 100%;
+}
+
 /* responsive mobile con mediaqueries Pag Home*/
 @media screen and (max-width: 576px) {
- .card-img {
-        width: 40%;
-    }
-    
- .card-img2 {
-        width: 20%;
+
+    .card-img {
+        width: 50%;
     }
     
 

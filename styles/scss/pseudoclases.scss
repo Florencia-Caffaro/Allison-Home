@@ -12,11 +12,11 @@ a:hover {color: white;}
 
 li:hover {
     @extend %animacion-nav;
-    background-color: black;
+    background-color: $secondary-color;
     
 }
 
 li:active {
     @extend %animacion-nav;
-    background-color: $secondary-color;
+    background-color: black;
 }
