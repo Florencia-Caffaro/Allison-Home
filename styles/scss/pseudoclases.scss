@@ -20,3 +20,9 @@ li:active {
     @extend %animacion-nav;
     background-color: black;
 }
+
+.logoig:hover {
+    background-color: $secondary-color;
+    border-radius: 5px;
+    padding: 5px;
+   }

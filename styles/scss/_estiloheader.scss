@@ -2,7 +2,6 @@
 
 /* mapa nav */
 $navbar: (
-    border: 1px solid black,
     color: white,
     radio: 5px,
     cursor: pointer,
@@ -22,7 +21,6 @@ ul li a {
     li {
         width: 120px;
         height: 120px;
-        border: map-get($map: $navbar, $key: border);
         background-color: rgb(215, 215, 215);
         border-radius: map-get($map: $navbar, $key: radio);
         margin: 15px;
@@ -73,7 +71,6 @@ ul li a {
 
         width: 55px;
         height: 20px;
-        border: solid 1px black;
         background-color: rgb(215, 215, 215);
         border-radius: 3px;
         margin: 5px;

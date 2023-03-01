@@ -17,7 +17,6 @@ ul li a {
 li {
     width: 120px;
     height: 120px;
-    border: solid 1px black;
     background-color: rgb(215, 215, 215);
     border-radius: 5px;
     margin: 15px;
@@ -43,6 +42,12 @@ li:active {
     padding: 5px;
 
 }
+
+.logoig:hover {
+    background-color:#f10086;
+    border-radius: 5px;
+    padding: 5px;
+   }
 
 /* estilo barra busqueda */
 .busqueda {
@@ -208,6 +213,12 @@ margin-top: 10px;}
     text-align: center;
     }
 
+ .texto-pag-saldi {
+
+    margin: 100px;
+    padding: 25px;
+    }
+ 
 
 
 /* responsive mobile con mediaqueries */
@@ -223,7 +234,6 @@ li {
     
     width: 55px;
     height: 20px;
-    border: solid 1px black;
     background-color: rgb(215, 215, 215);
     border-radius: 3px;
     margin: 5px;
@@ -319,32 +329,6 @@ li:active {
     height: 15px;
 }
 
-/* grid areas para mobile 
-
-#mobile {
-    margin: 30px;
-    display: grid;
-    grid-template-areas:
-        "nav "
-        "main"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 7% 60% 10%;
-}
-
-nav { grid-area: nav;
-}
-
- main { grid-area: main;
-    margin: 10px;
-}
-
- footer { grid-area: footer;
-}
-
-header { grid-area: header;
-}
-*/
 
 #cerca { width: 50%;
 height: 20px;}
@@ -364,33 +348,53 @@ height: 20px;}
     font-size: 14px;
     text-align: center;
     }
-/* responsive mobile pagina Contatto */
-/* grid areas pagina contatto */
+/* responsive mobile pagina Contatto CON FLEX */
+
 .tittle-grid-contatto {
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     text-align: center;
     margin: 3px;
+    padding: 3px;
 }
 
 .grid-container-contatto {
    display: flex;
-    justify-content: center;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .estilo {
-    width: 30%;
-    max-width: 30%;
-    margin: 5px;
-    padding: 5px;
+    width: 70%;
+    max-width: 70%;
+    margin: 3px;
+    padding: 3px;
 }
 
 .estilo-2 {
-    margin: 5px;
+    margin: 3px;
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     text-align: center;
 }
+
+.areatexto {
+ width: 100%;
+ height: 50%;
+
+}
+
+.map {
+    width: 100%;
+    height: 50%;
+}
+
+/* Responsive pagina saldi texto */
+.texto-pag-saldi {
+    margin: 25px;
+    padding: 10px;
+    }
 
 }
