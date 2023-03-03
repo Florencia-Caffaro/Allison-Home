@@ -3,9 +3,7 @@
     padding: 0
 }
 
-
-
-/* atributos tipografia barra nav */
+/* Atributos tipografia barra nav */
 ul li a {
     color: black;
     font-family: 'Open Sans', sans-serif;
@@ -13,7 +11,7 @@ ul li a {
     text-align: center;
 }
 
-/* box-modeling */
+/* Box-modeling */
 li {
     width: 120px;
     height: 120px;
@@ -47,9 +45,10 @@ li:active {
     background-color:#f10086;
     border-radius: 5px;
     padding: 5px;
+    margin: 10px;
    }
 
-/* estilo barra busqueda */
+/* Estilo barra busqueda */
 .busqueda {
     width: 150px;
     height: 20px;
@@ -59,7 +58,7 @@ li:active {
 }
 
 
-/* estilo iconos profile y compras */
+/* Estilo iconos profile y compras */
 
 .iconos {
     width: 30px;
@@ -69,10 +68,7 @@ li:active {
     display: inline;
 }
 
-
-
-
-/* estilo pie todas las paginas */
+/* Estilo pie todas las paginas */
 .pie {
     color: rgb(66, 64, 64);
     font-family: 'Open Sans', sans-serif;
@@ -80,12 +76,13 @@ li:active {
 }
 
 .logoig {
+    margin: 5px;
     padding: 5px;
     width: 30px;
     height: 30px;
 }
 
-/* flex header todas las paginas */
+/* Flex header todas las paginas */
 
 .iconos-header {
     display: flex;
@@ -100,7 +97,7 @@ header {
     flex-wrap: nowrap;
 }
 
-/* flex header pagina home */
+/* Flex header pagina home */
 
 .inline {
    
@@ -113,7 +110,7 @@ header {
 
 
 
-/* footer todas las paginas */
+/* Footer todas las paginas */
 
 .footer {
     margin: 50px;
@@ -123,7 +120,7 @@ header {
     align-items: baseline;
 }
 
-/* texto e imagen producto pagina prodotto */
+/* Texto e imagen producto pagina prodotto */
 
 main {
     color: rgb(66, 64, 64);
@@ -138,7 +135,7 @@ main {
     margin: 20px;
 }
 
-/* grid pagina home */
+/* Grid pagina home */
 .tittle-grid {
     color: #f10086;
     font-family: 'Comfortaa', cursive;
@@ -149,7 +146,7 @@ main {
 }
 
 
-/* grid areas pagina contatto */
+/* Grid areas pagina contatto */
 .tittle-grid-contatto {
     color: black;
     font-family: 'Open Sans', sans-serif;
@@ -173,7 +170,7 @@ main {
     align-items: initial;
 }
 
-/* pagina contatto tipografia. margin */
+/* Pagina contatto tipografia. margin */
 
 .estilo {
     width: 90%;
@@ -194,7 +191,7 @@ main {
     width: 100%;
 }
 
-/* carrousel pagina noi */
+/* Carrousel pagina noi */
 
 #carouselExampleDark {
     width: 60%;
@@ -221,7 +218,7 @@ margin-top: 10px;}
  
 
 
-/* responsive mobile con mediaqueries */
+/* Responsive mobile con mediaqueries */
 @media screen and (max-width: 576px) {
 
 
@@ -288,7 +285,7 @@ li:active {
 
 .tittle-grid {
     font-family: 'Comfortaa', cursive;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     margin: 20px;
 }
@@ -348,7 +345,7 @@ height: 20px;}
     font-size: 14px;
     text-align: center;
     }
-/* responsive mobile pagina Contatto CON FLEX */
+/* Responsive mobile pagina Contatto CON FLEX */
 
 .tittle-grid-contatto {
     color: black;
