@@ -9,54 +9,55 @@ ul li a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
 
 /* Box-modeling */
 li {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(215, 215, 215);
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 15px;
-    padding: 5px;
+    padding: 3px;
     display: inline;
 }
-a:hover {color: white;}
+
+.nav-link:hover {
+    color: white;
+}
+
+
+
 
 li:hover {
-    width: 120px;
-    height: 120px;
-    background-color:#f10086;
-    border-radius: 5px;
-    padding: 5px;
+    background-color: #f10086;
+    border-radius: 10px;
+    padding: 3px;
 }
 
 
 li:active {
-    width: 120px;
-    height: 120px;
     background-color: black;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 3px;
 
 }
 
 .logoig:hover {
-    background-color:#f10086;
-    border-radius: 5px;
+    background-color: #f10086;
+    border-radius: 10px;
     padding: 5px;
     margin: 10px;
-   }
-
-/* Estilo barra busqueda */
-.busqueda {
-    width: 150px;
-    height: 20px;
-    margin: 10px;
-    padding: 5px;
-    display: inline;
 }
 
+/* Estilo barra busqueda */
+.form-control {
+    margin: 13px;
+    height: 50%;
+    display: inline;
+
+}
 
 /* Estilo iconos profile y compras */
 
@@ -66,6 +67,7 @@ li:active {
     margin: 15px;
     padding: 5px;
     display: inline;
+    cursor: pointer;
 }
 
 /* Estilo pie todas las paginas */
@@ -81,33 +83,6 @@ li:active {
     width: 30px;
     height: 30px;
 }
-
-/* Flex header todas las paginas */
-
-.iconos-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-wrap: nowrap;
-}
-
-/* Flex header pagina home */
-
-.inline {
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-
 
 
 /* Footer todas las paginas */
@@ -126,7 +101,7 @@ main {
     color: rgb(66, 64, 64);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    ;
+
 }
 
 .img-prodotto {
@@ -139,7 +114,7 @@ main {
 .tittle-grid {
     color: #f10086;
     font-family: 'Comfortaa', cursive;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin: 20px;
@@ -193,205 +168,187 @@ main {
 
 /* Carrousel pagina noi */
 
-#carouselExampleDark {
+#carouselExampleIndicators {
     width: 60%;
     margin: auto;
     padding: 10px;
 }
 
-.card-titulo {padding: 10px;
-margin-top: 10px;}
+.card-titulo {
+    color: #f10086;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 28px;
+}
 
 .card-texto {
-    
+    color: rgb(47, 47, 47);
     margin: 10px;
-    padding: 5px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
     text-align: center;
-    }
+    background-color:  rgb(215, 215, 215);
+}
 
- .texto-pag-saldi {
-
-    margin: 100px;
+.texto-pag-saldi {
+    margin-top: 3px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 25px;
-    }
- 
+}
+
+.card-text {
+    color: #f10086;
+}
+
+#carouselExampleDark2 {
+    margin: 1px;
+    padding: 1px;
+    width: 100%;
+}
+
+.card-title {
+    cursor: pointer;
+}
+
+
 
 
 /* Responsive mobile con mediaqueries */
 @media screen and (max-width: 576px) {
 
 
-li {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    text-decoration: none;
-    text-align: center;
-    
-    width: 55px;
-    height: 20px;
-    background-color: rgb(215, 215, 215);
-    border-radius: 3px;
-    margin: 5px;
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-a:hover {color: white;}
-
-li:hover {
-    width: 55px;
-    height: 20px;
-    background-color: #f10086;
-    border-radius: 3px;
-    margin: 5px;
-    padding: 3px;
-}
-
-li:active {
-    width: 55px;
-    height: 20px;
-    background-color: black;
-    border-radius: 3px;
-    margin: 5px;
-    padding: 3px;}
-
-
-.busqueda {
-    width: 70px;
-    height: 10px;
-    margin: 15px;
-    padding: 3px;
-    display: inline;
-}
-
-
-.iconos {
-    width: 20px;
-    height: 20px;
-    margin: 7px;
-    padding: 3px;
-    display: inline;
-}
-
-.card-img {
-    width: 50%;
-}
-
-
-
-.tittle-grid {
-    font-family: 'Comfortaa', cursive;
-    font-size: 14px;
-    text-align: center;
-    margin: 20px;
-}
-
-.grid-container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-
-}
-
-.grid-container>div {
-    padding: 10px;
-}
-
-.footer {
-    margin: 25px;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-.pie {
-    color: rgb(66, 64, 64);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    text-align: center;
-}
-
-.logoig {
-    padding: 3px;
-    width: 15px;
-    height: 15px;
-}
-
-
-#cerca { width: 50%;
-height: 20px;}
-
-
-
-.card-titulo {
-    margin: 5px;
-    padding: 5px;
-    font-size: 14px;
-
-}
-.card-texto {
-    
-    margin: 10px;
-    padding: 5px;
-    font-size: 14px;
-    text-align: center;
+    li {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(215, 215, 215);
+        border-radius: 5px;
+        margin: 5px;
+        padding: auto;
+        display: inline;
     }
-/* Responsive mobile pagina Contatto CON FLEX */
 
-.tittle-grid-contatto {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    text-align: center;
-    margin: 3px;
-    padding: 3px;
-}
+    .form-control {
+        margin: auto;
+        height: 50%;
+        display: inline;
+    }
 
-.grid-container-contatto {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-.estilo {
-    width: 70%;
-    max-width: 70%;
-    margin: 3px;
-    padding: 3px;
-}
 
-.estilo-2 {
-    margin: 3px;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
-    text-align: center;
-}
+    .iconos {
+        width: 20px;
+        height: 20px;
+        margin: 7px;
+        padding: 3px;
+        display: inline;
+    }
 
-.areatexto {
- width: 100%;
- height: 50%;
+    .card-img {
+        width: 50%;
+    }
 
-}
 
-.map {
-    width: 100%;
-    height: 50%;
-}
+    .tittle-grid {
+        font-family: 'Comfortaa', cursive;
+        font-size: 14px;
+        text-align: center;
+        margin: 20px;
+    }
 
-/* Responsive pagina saldi texto */
-.texto-pag-saldi {
-    margin: 25px;
-    padding: 10px;
+
+    .footer {
+        margin: 25px;
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .pie {
+        color: rgb(66, 64, 64);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .logoig {
+        padding: 3px;
+        width: 25px;
+        height: 25px;
+    }
+
+
+    #cerca {
+        width: 50%;
+        height: 20px;
+    }
+
+
+
+    .card-titulo {
+        margin: 5px;
+        padding: 5px;
+        font-size: 16px;
+
+    }
+
+    .card-texto {
+        color: rgb(47, 47, 47);
+        margin: 10px;
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        background-color:  rgb(215, 215, 215);
+    }
+
+    /* Responsive mobile pagina Contatto CON FLEX */
+
+    .tittle-grid-contatto {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        margin: 3px;
+        padding: 3px;
+    }
+
+    .grid-container-contatto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estilo {
+        width: 70%;
+        max-width: 70%;
+        margin: 3px;
+        padding: 3px;
+    }
+
+    .estilo-2 {
+        margin: 3px;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .areatexto {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .map {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* Responsive pagina saldi texto */
+    .texto-pag-saldi {
+        margin: 25px;
+        padding: 10px;
     }
 
 }

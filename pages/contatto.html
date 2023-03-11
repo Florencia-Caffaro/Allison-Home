@@ -32,29 +32,47 @@
 </head>
 
 <body>
-    <section class="inline">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./contatto.html">Contatto</a></li>
-                <li><a href="./noi.html">Noi</a></li>
-                <li><a href="./prodotto.html">Prodotto</a></li>
-                <li><a href="./saldi.html">Saldi</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <header class="iconos-header">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./prodotto.html">Prodotto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./noi.html">Noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contatto.html">Contatto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./saldi.html">Saldi</a>
+                    </li>
 
-            <input type="text" name="cerca" id="cerca" placeholder="CERCA" class="busqueda">
 
-            <img src="../multimedia/img/icono profile.png" class="iconos" alt="icono profilo">
 
-            <img src="../multimedia/img/icono compas.png" class="iconos" alt="icono shopping">
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="CERCA" aria-label="Search">
 
-        </header>
 
-    </section>
+                    <img src="../multimedia/img/icono profile.png" class="iconos" alt="icono profile">
 
+                    <img src="../multimedia/img/icono compas.png" class="iconos" alt="icono compras">
+                </form>
+            </div>
+        </div>
+
+    </nav>
 
     <main class="grid-container-contatto">
 

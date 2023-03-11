@@ -33,58 +33,75 @@
   <title>Allison Home - Inizio</title>
 </head>
 
-<body id="mobile">
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./pages/prodotto.html">Prodotto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/noi.html">Noi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contatto.html">Contatto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/saldi.html">Saldi</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="CERCA" aria-label="Search">
+          <img src="./multimedia/img/icono profile.png" class="iconos" alt="icono profile">
+          <img src="./multimedia/img/icono compas.png" class="iconos" alt="icono compras">
 
-  <section class="inline">
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/contatto.html">Contatto</a></li>
-        <li><a href="./pages/noi.html">Noi</a></li>
-        <li><a href="./pages/prodotto.html">Prodotto</a></li>
-        <li><a href="./pages/saldi.html">Saldi</a></li>
-      </ul>
-    </nav>
-
-
-    <header class="iconos-header">
-
-      <input type="text" name="cerca" id="cerca" placeholder="CERCA" class="busqueda">
-
-      <img src="./multimedia/img/icono profile.png" class="iconos" alt="icono profile">
-
-      <img src="./multimedia/img/icono compas.png" class="iconos" alt="icono compras">
-
-    </header>
-
-  </section>
+        </form>
+      </div>
+    </div>
+  </nav>
 
 
   <main>
 
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./multimedia/img/ImagenHome-01.jpg" class="d-block w-100" alt="Immagine bagno con logo">
+    <section id="carouselExampleDark2">
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./multimedia/img/ImagenHome-01.jpg" class="d-block w-100" alt="Immagine bagno con logo">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./multimedia/img/ImagenHome-03-01.jpg" class="d-block w-100" alt="Immagine modello">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/img/ImagenHome-04-01.jpg" class="d-block w-100" alt="Immagine bata">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./multimedia/img/ImagenHome-03-01.jpg" class="d-block w-100" alt="Immagine modello">
-        </div>
-        <div class="carousel-item">
-          <img src="./multimedia/img/ImagenHome-04-01.jpg" class="d-block w-100" alt="Immagine bata">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
+
 
     <h2 class="tittle-grid animate__animated animate__backInDown">Nuova collezione</h2>
 
