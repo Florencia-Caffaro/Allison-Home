@@ -201,6 +201,10 @@ main {
     color: #f10086;
 }
 
+.card-text-price {
+    text-decoration: line-through;
+}
+
 #carouselExampleDark2 {
     margin: 1px;
     padding: 1px;
@@ -250,7 +254,7 @@ main {
 
     .tittle-grid {
         font-family: 'Comfortaa', cursive;
-        font-size: 18px;
+        font-size: 22px;
         text-align: center;
         margin: 20px;
     }
